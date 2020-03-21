@@ -1,4 +1,4 @@
-/**/
+/* topo */
 
 * {
     margin: 0;
@@ -19,7 +19,7 @@ body {
     height: 150px;
     background: url(../imagens/detalhe-topo.png) no-repeat right top;
     padding-top: 25px;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 
 .logo {
@@ -27,4 +27,53 @@ body {
     height: 66px;
     background: url(../imagens/logo.png) no-repeat center;
     text-indent: -3000px;
+}
+
+/* navegacao */
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo ul {
+    margin-top: 30px;
+    background: #b10333;
+    float: left;
+}
+
+#topo ul li {
+    float: left;
+}
+
+#topo li a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.2em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: white;
+    background: url(../imagens/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a {
+    background: none;
+}
+
+#topo ul a:hover {
+    color: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos
+{
+    color: white;
+    background: #de003e;
+    cursor: text;
 }
