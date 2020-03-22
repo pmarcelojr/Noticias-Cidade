@@ -30,6 +30,14 @@ body {
 }
 
 /* navegacao */
+a:link a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+a:hover {
+    color: #e50040;
+}
 
 ul {
     margin: 0;
@@ -85,25 +93,153 @@ body.fotos #navegacao a#fotos
     width: 750px;
 }
 
+#lateral {
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
 #primario {
-    border: 1px solid black;
     width: 270px;
     float: left;
     margin: 0 0 20px 195px;
 }
 
+#duas-colunas #primario {
+    width: 553px;
+    margin: 0 0 20px 195px;
+}
+
+#uma-coluna #primario {
+    width: 750px;
+    margin: 0 0 20px 0;
+}
+
 #secundario {
-    border: 1px solid red;
     width: 270px;
     float: left;
     margin: 0 0 20px 11px;
 }
 
-#lateral {
-    border: 1px solid green;
-    width: 180px;
+/* Caixa */
+.caixa {
+    margin: 10px 0;
+    padding: 5px;
+    background: #f3f3f3 url(../imagens/fundo-caixa.png);
+}
+
+h2 {
+    font-size: 1em;
+    background: #294c71;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.caixa-conteudo {
+    background: #ffffff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Nomes Laterais e Efeitos*/
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+    background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+    color: #a1a1a1;
+}
+
+/* Formata formulario*/
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    width: 145px;
+    padding: 5px;
+    font-size: 0.9em;
+    background-color: #ffffff;
+}
+
+input.submit {
+    width: 90px;
+    color: #ffffff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+
+/* Formatando imagem */
+img.imagem-principal {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+/* formatando cabeçalhos */
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background: #b10333;
+    color: #ffffff;
+}
+
+.entrevista h3 {
+    background: #de003e;
+    color: #ffffff;
+}
+
+.destaque a {
+    color: #b10333;
+}
+
+.entrevista a {
+    color: #b10333;
+}
+
+/* formatando lista de noticiais*/
+#lista-noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #cccccc;
+    height: 62px;
+}
+
+#lista-noticias li:hover {
+    background: #eeeeee;
+    cursor: pointer;
+}
+
+#lista-noticias li a img {
     float: left;
-    margin: 0 0 20px -750px;
+    margin: 5px;
+}
+
+#lista-noticias li a {
+    text-decoration: none;
+}
+
+#lista-noticias li a h3 {
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#lista-noticias li a p {
+    font-size: 0.7em;
+    color: #000000;
 }
 
 /* Rodape */
@@ -113,7 +249,12 @@ body.fotos #navegacao a#fotos
 }
 
 #rodape {
-    border: 1px solid red;
+    width: 750px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+#rodape-logo {
     width: 750px;
     margin: 0 auto;
     color: #ffffff;
