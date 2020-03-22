@@ -11,7 +11,7 @@ body {
 }
 
 #container {
-    width: 700px;
+    width: 750px;
     margin: 0 auto;
 }
 
@@ -50,7 +50,7 @@ ul {
 #topo li a {
     font-size: 0.9em;
     display: block;
-    padding: 0.5em 1.2em;
+    padding: 0.5em 1.4em;
     line-height: 2.1em;
     text-decoration: none;
     color: white;
@@ -76,4 +76,45 @@ body.fotos #navegacao a#fotos
     color: white;
     background: #de003e;
     cursor: text;
+}
+
+/* Layout 3 colunas Home */
+#conteudo {
+    margin-top: 60px;
+    background: #f5f5f5;
+    width: 750px;
+}
+
+#primario {
+    border: 1px solid black;
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+
+#secundario {
+    border: 1px solid red;
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 11px;
+}
+
+#lateral {
+    border: 1px solid green;
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+/* Rodape */
+#container-rodape {
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape {
+    border: 1px solid red;
+    width: 750px;
+    margin: 0 auto;
+    color: #ffffff;
 }
